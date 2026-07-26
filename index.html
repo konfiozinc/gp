@@ -4,39 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <meta name="theme-color" content="#064e3b"/>
-    <title>Gael Pineda - Asesor Profesional en Lotes Campestres</title>
+    <title>Gael Pineda - Multiservicios & Lotes Campestres</title>
     
     <!-- Framework CSS & Iconografía Oficial -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
     <style>
         body { font-family: 'Inter', sans-serif; }
-        .font-playfair { font-family: 'Playfair Display', serif; }
-        @keyframes fadeInUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
-        .fade-in-up { opacity: 0; animation: fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
         
         /* Wow Effect: Brillo perimetral dinámico en dorado y esmeralda */
         @keyframes brandGlow {
-            0%, 100% { border-color: rgba(234, 179, 8, 0.8); box-shadow: 0 0 16px rgba(234, 179, 8, 0.5); }
+            0%, 100% { border-color: rgba(234, 179, 8, 0.9); box-shadow: 0 0 16px rgba(234, 179, 8, 0.5); }
             50% { border-color: rgba(16, 185, 129, 0.9); box-shadow: 0 0 24px rgba(16, 185, 129, 0.6); }
         }
         .wow-profile { animation: brandGlow 3.5s infinite ease-in-out; }
         
         /* Conversión: Pulso asincrónico para botón principal de WhatsApp */
         @keyframes whatsappPulse {
-            0%, 100% { transform: scale(1); box-shadow: 0 8px 20px -4px rgba(37, 211, 102, 0.4); }
-            50% { transform: scale(1.02); box-shadow: 0 14px 25px -4px rgba(37, 211, 102, 0.6); }
+            0%, 100% { transform: scale(1); box-shadow: 0 8px 20px -4px rgba(37, 211, 102, 0.5); }
+            50% { transform: scale(1.02); box-shadow: 0 14px 25px -4px rgba(37, 211, 102, 0.7); }
         }
         .pulse-whatsapp { animation: whatsappPulse 2s infinite ease-in-out; }
         
-        .modal-overlay { position: fixed; inset: 0; background: rgba(6, 78, 59, 0.88); backdrop-filter: blur(8px); z-index: 1000; display: flex; align-items: center; justify-content: center; padding: 20px; opacity: 0; visibility: hidden; transition: opacity 0.2s ease, visibility 0.2s ease; }
+        .modal-overlay { position: fixed; inset: 0; background: rgba(6, 78, 59, 0.9); backdrop-filter: blur(8px); z-index: 1000; display: flex; align-items: center; justify-content: center; padding: 20px; opacity: 0; visibility: hidden; transition: opacity 0.2s ease, visibility 0.2s ease; }
         .modal-overlay.active { opacity: 1; visibility: visible; }
         .modal-content { background: #064e3b; border: 1px solid rgba(255,255,255,0.2); border-radius: 28px; width: 100%; max-w: 340px; transform: scale(0.96); transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1); }
         .modal-overlay.active .modal-content { transform: scale(1); }
@@ -58,46 +53,54 @@
         </div>
     </div>
 
-    <!-- CHASIS APP PREMIUM FIJA (VERDE ESMERALDA, AMBER ORO Y AZUL NOCHE) -->
+    <!-- CHASIS APP PREMIUM FIJA (MANDATORIO: SIN SCROLL DE FONDO) -->
     <div class="app-container w-full max-w-[380px] bg-gradient-to-b from-emerald-950 via-emerald-900 to-emerald-950 relative flex flex-col justify-between overflow-hidden shadow-2xl border-x border-emerald-800/30">
         
         <!-- CONTENIDO INTERNO DE PANTALLA -->
         <div class="flex-grow flex flex-col justify-between pb-24 overflow-y-auto">
             
             <!-- 2. MODULO: PORTADA & HERO -->
-            <header class="relative bg-gradient-to-b from-emerald-900 to-emerald-950 pt-5 pb-5 px-5 text-center text-white rounded-b-[38px] shadow-2xl flex-shrink-0 border-b border-amber-500/30">
+            <header class="relative bg-gradient-to-b from-emerald-900 to-emerald-950 pt-5 pb-4 px-5 text-center text-white rounded-b-[38px] shadow-2xl flex-shrink-0 border-b border-amber-500/30">
                 <div class="absolute top-3 right-4 bg-amber-500/20 text-amber-300 border border-amber-500/40 font-bold px-2.5 py-0.5 rounded-full text-[8px] uppercase tracking-wider">
-                    Asesor Profesional
+                    Sin Intereses
                 </div>
                 
                 <h2 class="text-2xl font-black text-white mt-1 tracking-tight">Gael Pineda</h2>
-                <p class="text-[10px] font-bold text-amber-400 uppercase tracking-widest mt-0.5">Multiservicios · Proyectos Campestres</p>
+                <p class="text-[10px] font-bold text-amber-400 uppercase tracking-widest mt-0.5">Asesor Profesional en Lotes Campestres</p>
                 
                 <!-- ZONA CENTRAL DE SEGURIDAD DEL LOGO (MANDATORIA E ILUMINADA) -->
-                <div class="w-28 h-28 mx-auto bg-white rounded-full flex flex-col items-center justify-center border-4 wow-profile p-1 my-2.5 shadow-2xl block overflow-hidden relative">
+                <div class="w-24 h-24 mx-auto bg-white rounded-full flex flex-col items-center justify-center border-4 wow-profile p-1 my-2 shadow-2xl block overflow-hidden relative">
                     <svg viewBox="0 0 200 200" class="w-full h-full object-contain">
-                        <!-- Arco dorado del logo -->
                         <path d="M 32 148 A 75 75 0 1 1 168 148" fill="none" stroke="#d97706" stroke-width="5" stroke-linecap="round"/>
-                        <!-- Techo de la casa -->
                         <path d="M 68 85 L 100 58 L 148 96" fill="none" stroke="#94a3b8" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
                         <rect x="120" y="62" width="7" height="12" fill="#94a3b8"/>
-                        <!-- Ventana 4 cuadros -->
                         <g fill="#94a3b8">
                             <rect x="89" y="72" width="8" height="8"/>
                             <rect x="99" y="72" width="8" height="8"/>
                             <rect x="89" y="82" width="8" height="8"/>
                             <rect x="99" y="82" width="8" height="8"/>
                         </g>
-                        <!-- Letra G en dorado -->
                         <text x="50" y="132" font-family="'Inter', sans-serif" font-weight="900" font-size="76" fill="#d97706">G</text>
-                        <!-- Letra P en blanco con sombra -->
                         <text x="96" y="134" font-family="'Inter', sans-serif" font-weight="900" font-size="82" fill="#ffffff" stroke="#64748b" stroke-width="2">P</text>
                     </svg>
                 </div>
                 
-                <div class="bg-emerald-950/80 rounded-xl p-2 max-w-[270px] mx-auto shadow-inner border border-amber-500/30">
-                    <p class="text-[9px] text-emerald-100 font-medium leading-tight">
-                        "Te acompaño a encontrar el lote ideal para construir tus sueños en entornos naturales de alta valorización."
+                <!-- REDES SOCIALES Y SITIO WEB -->
+                <div class="flex justify-center items-center gap-3 my-1">
+                    <a href="https://www.multiserviciosgaelpineda.com/" target="_blank" class="w-7 h-7 bg-amber-500/20 hover:bg-amber-500/40 text-amber-300 border border-amber-500/40 rounded-full flex items-center justify-center text-xs transition-all">
+                        <i class="fas fa-globe"></i>
+                    </a>
+                    <a href="https://www.instagram.com/gael_pineda_lotescampestres?igsh=MXVja2txMm92NnB3YQ==" target="_blank" class="w-7 h-7 bg-amber-500/20 hover:bg-amber-500/40 text-amber-300 border border-amber-500/40 rounded-full flex items-center justify-center text-xs transition-all">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://maps.app.goo.gl/kPFLYpm5aifYMX7a6" target="_blank" class="w-7 h-7 bg-amber-500/20 hover:bg-amber-500/40 text-amber-300 border border-amber-500/40 rounded-full flex items-center justify-center text-xs transition-all">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </a>
+                </div>
+
+                <div class="bg-emerald-950/80 rounded-xl p-1.5 max-w-[270px] mx-auto shadow-inner border border-amber-500/20 mt-1">
+                    <p class="text-[8.5px] text-emerald-100 font-medium leading-tight">
+                        Lotes desde 1.000m² con Financiación Directa hasta 48 meses sin intereses.
                     </p>
                 </div>
             </header>
@@ -106,52 +109,52 @@
             <div class="px-5 space-y-3 flex-grow flex flex-col justify-center mt-2">
                 
                 <!-- 3. MODULO: CTA DE ALTA CONVERSIÓN -->
-                <div class="fade-in-up">
-                    <a href="https://wa.me/573334002040?text=Hola%20Gael,%20quisiera%20recibir%20información%20y%20precios%20de%20los%20lotes%20campestres." target="_blank" class="w-full flex items-center justify-center bg-[#25D366] text-white font-black py-3 px-4 rounded-xl text-center text-xs uppercase tracking-wider transition-transform transform active:scale-95 pulse-whatsapp shadow-lg">
-                        <i class="fab fa-whatsapp text-xl mr-2 text-white"></i> Consultar Lotes en WhatsApp
+                <div>
+                    <a href="https://wa.me/573334002040?text=Hola%20Gael,%20vi%20tu%20tarjeta%20digital%20y%20quiero%20informaci%C3%B3n%20sobre%20los%20lotes%20disponibles." target="_blank" class="w-full flex items-center justify-center bg-[#25D366] text-white font-black py-3 px-4 rounded-xl text-center text-xs uppercase tracking-wider transition-transform transform active:scale-95 pulse-whatsapp shadow-lg">
+                        <i class="fab fa-whatsapp text-xl mr-2 text-white"></i> Cotizar Lote en WhatsApp
                     </a>
                 </div>
 
-                <!-- 5. MODULO: PROYECTOS DESTACADOS (PÍLDORAS DIRECTAS) -->
-                <div class="grid grid-cols-2 gap-2 fade-in-up">
+                <!-- 5. MODULO: PROYECTOS DESTACADOS CON PRECIOS -->
+                <div class="grid grid-cols-2 gap-2">
                     <div class="bg-emerald-800/60 border border-amber-500/30 p-2 rounded-xl flex items-center gap-2 shadow-sm">
-                        <div class="w-7 h-7 bg-amber-500/20 text-amber-400 rounded-lg flex items-center justify-center text-xs flex-shrink-0"><i class="fas fa-crown"></i></div>
+                        <div class="w-7 h-7 bg-amber-500/20 text-amber-400 rounded-lg flex items-center justify-center text-xs flex-shrink-0"><i class="fas fa-tags"></i></div>
                         <div>
-                            <span class="text-[9px] font-black text-white block leading-tight">Victoria de Sión</span>
-                            <span class="text-[7.5px] text-emerald-200">Sabanagrande</span>
+                            <span class="text-[9px] font-black text-white block leading-tight">Desde $65M</span>
+                            <span class="text-[7.5px] text-amber-300 font-semibold">Circunvalar Prosperidad</span>
                         </div>
                     </div>
                     <div class="bg-emerald-800/60 border border-amber-500/30 p-2 rounded-xl flex items-center gap-2 shadow-sm">
-                        <div class="w-7 h-7 bg-amber-500/20 text-amber-400 rounded-lg flex items-center justify-center text-xs flex-shrink-0"><i class="fas fa-clover"></i></div>
+                        <div class="w-7 h-7 bg-amber-500/20 text-amber-400 rounded-lg flex items-center justify-center text-xs flex-shrink-0"><i class="fas fa-home"></i></div>
                         <div>
-                            <span class="text-[9px] font-black text-white block leading-tight">El Trébol</span>
-                            <span class="text-[7.5px] text-emerald-200">Sabanagrande</span>
+                            <span class="text-[9px] font-black text-white block leading-tight">Villa Ceci</span>
+                            <span class="text-[7.5px] text-amber-300 font-semibold">$70M · Inicial $20M</span>
                         </div>
                     </div>
                     <div class="bg-emerald-800/60 border border-amber-500/30 p-2 rounded-xl flex items-center gap-2 shadow-sm">
-                        <div class="w-7 h-7 bg-amber-500/20 text-amber-400 rounded-lg flex items-center justify-center text-xs flex-shrink-0"><i class="fas fa-seedling"></i></div>
+                        <div class="w-7 h-7 bg-amber-500/20 text-amber-400 rounded-lg flex items-center justify-center text-xs flex-shrink-0"><i class="fas fa-leaf"></i></div>
                         <div>
-                            <span class="text-[9px] font-black text-white block leading-tight">Las Margaritas</span>
-                            <span class="text-[7.5px] text-emerald-200">Sabanagrande</span>
+                            <span class="text-[9px] font-black text-white block leading-tight">Madrigal</span>
+                            <span class="text-[7.5px] text-amber-300 font-semibold">$90M · Servicios</span>
                         </div>
                     </div>
                     <div class="bg-emerald-800/60 border border-amber-500/30 p-2 rounded-xl flex items-center gap-2 shadow-sm">
-                        <div class="w-7 h-7 bg-amber-500/20 text-amber-400 rounded-lg flex items-center justify-center text-xs flex-shrink-0"><i class="fas fa-anchor"></i></div>
+                        <div class="w-7 h-7 bg-amber-500/20 text-amber-400 rounded-lg flex items-center justify-center text-xs flex-shrink-0"><i class="fas fa-map-pin"></i></div>
                         <div>
-                            <span class="text-[9px] font-black text-white block leading-tight">Colinas de Portofino</span>
-                            <span class="text-[7.5px] text-emerald-200">Palmar de Varela</span>
+                            <span class="text-[9px] font-black text-white block leading-tight">Sabanagrande</span>
+                            <span class="text-[7.5px] text-amber-300 font-semibold">$100M · 48 Meses</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- CANALES DIRECTOS -->
-                <div class="grid grid-cols-2 gap-2 fade-in-up">
-                    <a href="tel:+573334002040" class="bg-emerald-800/90 hover:bg-emerald-700 border border-emerald-600/40 py-2.5 px-2 rounded-xl flex items-center justify-center gap-1.5 text-[10px] font-bold text-white transition-all active:scale-95 shadow-md">
-                        <i class="fas fa-phone text-amber-400"></i> Llamar 333 400 2040
+                <!-- ENLACES DIRECTOS Y UBICACIÓN GPS REAL -->
+                <div class="grid grid-cols-2 gap-2">
+                    <a href="https://maps.app.goo.gl/kPFLYpm5aifYMX7a6" target="_blank" class="bg-emerald-800/90 hover:bg-emerald-700 border border-emerald-600/40 py-2.5 px-2 rounded-xl flex items-center justify-center gap-1.5 text-[10px] font-bold text-white transition-all active:scale-95 shadow-md">
+                        <i class="fas fa-compass text-amber-400"></i> Abrir GPS Maps
                     </a>
-                    <button id="btn-open-projects" class="bg-amber-500 hover:bg-amber-400 text-emerald-950 border border-amber-300/40 py-2.5 px-2 rounded-xl flex items-center justify-center gap-1.5 text-[10px] font-black transition-all active:scale-95 shadow-md uppercase">
-                        <i class="fas fa-layer-group"></i> Ver Ubicaciones
-                    </button>
+                    <a href="https://www.multiserviciosgaelpineda.com/" target="_blank" class="bg-amber-500 hover:bg-amber-400 text-emerald-950 border border-amber-300/40 py-2.5 px-2 rounded-xl flex items-center justify-center gap-1.5 text-[10px] font-black transition-all active:scale-95 shadow-md uppercase">
+                        <i class="fas fa-globe"></i> Web Oficial
+                    </a>
                 </div>
             </div>
             
@@ -167,16 +170,16 @@
         <div class="absolute bottom-0 inset-x-0 bg-emerald-950 border-t border-emerald-800/50 z-20 flex flex-col">
             <nav class="px-2 py-2 flex justify-around items-center">
                 <button id="nav-services" class="flex flex-col items-center justify-center text-emerald-300 hover:text-white w-12 transition-colors">
-                    <i class="fas fa-city text-sm"></i><span class="text-[8px] font-bold mt-1">Proyectos</span>
+                    <i class="fas fa-city text-sm"></i><span class="text-[8px] font-bold mt-1">Precios</span>
                 </button>
                 <button id="nav-gallery" class="flex flex-col items-center justify-center text-emerald-300 hover:text-white w-12 transition-colors">
-                    <i class="fas fa-shield-halved text-sm"></i><span class="text-[8px] font-bold mt-1">Garantías</span>
+                    <i class="fas fa-bolt text-sm"></i><span class="text-[8px] font-bold mt-1">Servicios</span>
                 </button>
                 <button id="nav-coverage" class="flex flex-col items-center justify-center text-emerald-300 hover:text-white w-12 transition-colors">
-                    <i class="fas fa-map-location-dot text-sm"></i><span class="text-[8px] font-bold mt-1">Sectores</span>
+                    <i class="fas fa-map-location-dot text-sm"></i><span class="text-[8px] font-bold mt-1">Ubicación</span>
                 </button>
                 <button id="nav-testimonials" class="flex flex-col items-center justify-center text-emerald-300 hover:text-white w-12 transition-colors">
-                    <i class="fas fa-chart-line text-sm"></i><span class="text-[8px] font-bold mt-1">Beneficios</span>
+                    <i class="fas fa-hand-holding-dollar text-sm"></i><span class="text-[8px] font-bold mt-1">Crédito</span>
                 </button>
                 <button id="nav-share" class="flex flex-col items-center justify-center text-emerald-300 hover:text-white w-12 transition-colors">
                     <i class="fas fa-qrcode text-sm"></i><span class="text-[8px] font-bold mt-1">QR</span>
@@ -193,37 +196,25 @@
     <div id="modal-services" class="modal-overlay">
         <div class="modal-content overflow-hidden">
             <div class="p-4 bg-emerald-900 text-white font-bold text-xs uppercase flex justify-between items-center border-b border-emerald-700">
-                <span class="tracking-wider text-amber-400"><i class="fas fa-city mr-1.5"></i> Catálogo de Proyectos</span>
+                <span class="tracking-wider text-amber-400"><i class="fas fa-city mr-1.5"></i> Catálogo Completo y Precios</span>
                 <button class="close-modal text-lg font-light hover:text-amber-400">&times;</button>
             </div>
             <div class="p-4 max-h-[55vh] overflow-y-auto space-y-2.5 text-emerald-100 text-xs">
                 <div class="bg-emerald-800/60 p-3 rounded-xl border border-amber-500/30">
-                    <div class="flex justify-between items-center mb-1">
-                        <h4 class="font-bold text-white text-[12px]"><i class="fas fa-crown text-amber-400 mr-1"></i> Victoria de Sión</h4>
-                        <span class="bg-amber-500/20 text-amber-300 text-[8px] px-2 py-0.5 rounded-full border border-amber-500/40 font-bold">Sabanagrande</span>
-                    </div>
-                    <p class="text-emerald-200 text-[10px] leading-relaxed">Proyecto exclusivo campestre con excelentes vías de acceso y alta proyección urbana.</p>
+                    <h4 class="font-bold text-amber-300 text-[12px]">Lotes desde $65.000.000 COP</h4>
+                    <p class="text-[10px] text-emerald-200 mt-0.5">Ubicación: Salida a la Nueva Circunvalar de la Prosperidad. Desde 1.000m², inicial de $20M, luz, pozo de agua dulce gratis y escritura pública.</p>
                 </div>
                 <div class="bg-emerald-800/60 p-3 rounded-xl border border-amber-500/30">
-                    <div class="flex justify-between items-center mb-1">
-                        <h4 class="font-bold text-white text-[12px]"><i class="fas fa-clover text-amber-400 mr-1"></i> El Trébol Campestre</h4>
-                        <span class="bg-amber-500/20 text-amber-300 text-[8px] px-2 py-0.5 rounded-full border border-amber-500/40 font-bold">Sabanagrande</span>
-                    </div>
-                    <p class="text-emerald-200 text-[10px] leading-relaxed">Entorno 100% natural ideado para construir casas de descanso y descanso familiar.</p>
+                    <h4 class="font-bold text-amber-300 text-[12px]">Villa Ceci — $70.000.000 COP</h4>
+                    <p class="text-[10px] text-emerald-200 mt-0.5">Lotes de 20m x 50m (1.000m²). Luz, agua, cuota inicial de $20M y saldo a 48 cuotas sin intereses.</p>
                 </div>
                 <div class="bg-emerald-800/60 p-3 rounded-xl border border-amber-500/30">
-                    <div class="flex justify-between items-center mb-1">
-                        <h4 class="font-bold text-white text-[12px]"><i class="fas fa-seedling text-amber-400 mr-1"></i> Las Margaritas Campestre</h4>
-                        <span class="bg-amber-500/20 text-amber-300 text-[8px] px-2 py-0.5 rounded-full border border-amber-500/40 font-bold">Sabanagrande</span>
-                    </div>
-                    <p class="text-emerald-200 text-[10px] leading-relaxed">Lotes con amplias facilidades de financiación y excelente topografía.</p>
+                    <h4 class="font-bold text-amber-300 text-[12px]">Madrigal Campestre — $90.000.000 COP</h4>
+                    <p class="text-[10px] text-emerald-200 mt-0.5">Lotes de 1.000m² con servicios constitucionales (agua potable y energía), escrituras públicas y financiación directa sin intereses.</p>
                 </div>
                 <div class="bg-emerald-800/60 p-3 rounded-xl border border-amber-500/30">
-                    <div class="flex justify-between items-center mb-1">
-                        <h4 class="font-bold text-white text-[12px]"><i class="fas fa-anchor text-amber-400 mr-1"></i> Colinas de Portofino</h4>
-                        <span class="bg-amber-500/20 text-amber-300 text-[8px] px-2 py-0.5 rounded-full border border-amber-500/40 font-bold">Palmar de Varela</span>
-                    </div>
-                    <p class="text-emerald-200 text-[10px] leading-relaxed">Ubicación estratégica sobre corredor de altísima valorización comercial e inmobiliaria.</p>
+                    <h4 class="font-bold text-amber-300 text-[12px]">Sabanagrande Premium — $100.000.000 COP</h4>
+                    <p class="text-[10px] text-emerald-200 mt-0.5">Lotes desde 1.000m² con Luz, Agua e Internet Banda Ancha. Cuota inicial de $30M y 48 cuotas sin intereses.</p>
                 </div>
             </div>
         </div>
@@ -232,24 +223,30 @@
     <div id="modal-gallery" class="modal-overlay">
         <div class="modal-content overflow-hidden">
             <div class="p-4 bg-emerald-900 text-white font-bold text-xs uppercase flex justify-between items-center border-b border-emerald-700">
-                <span class="tracking-wider text-amber-400"><i class="fas fa-shield-halved mr-1.5"></i> Respaldos y Garantías</span>
+                <span class="tracking-wider text-amber-400"><i class="fas fa-bolt mr-1.5"></i> Servicios Incluidos</span>
                 <button class="close-modal text-lg font-light hover:text-amber-400">&times;</button>
             </div>
             <div class="p-4 text-center">
-                <div class="bg-emerald-800/60 p-4 rounded-xl border border-emerald-600/40 space-y-3">
-                    <div class="flex items-center gap-3 text-left">
-                        <i class="fas fa-shield-check text-2xl text-amber-400 flex-shrink-0"></i>
-                        <div>
-                            <h5 class="text-white font-bold text-[11px]">Seguridad y Tranquilidad</h5>
-                            <p class="text-emerald-200 text-[10px]">Acompañamiento en el proceso de adquisición legal de tu predio.</p>
-                        </div>
+                <div class="bg-emerald-800/60 p-4 rounded-xl border border-emerald-600/40 grid grid-cols-2 gap-3 text-left">
+                    <div>
+                        <i class="fas fa-lightbulb text-amber-400 text-base mb-1 block"></i>
+                        <span class="font-bold text-white text-[11px] block">Luz Eléctrica</span>
+                        <span class="text-[9px] text-emerald-200">Redes disponibles</span>
                     </div>
-                    <div class="flex items-center gap-3 text-left">
-                        <i class="fas fa-chart-line text-2xl text-amber-400 flex-shrink-0"></i>
-                        <div>
-                            <h5 class="text-white font-bold text-[11px]">Alta Valorización</h5>
-                            <p class="text-emerald-200 text-[10px]">Proyectos ubicados en polos de desarrollo estratégico del Atlántico.</p>
-                        </div>
+                    <div>
+                        <i class="fas fa-droplet text-amber-400 text-base mb-1 block"></i>
+                        <span class="font-bold text-white text-[11px] block">Agua Dulce</span>
+                        <span class="text-[9px] text-emerald-200">Pozo / Acueducto</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-wifi text-amber-400 text-base mb-1 block"></i>
+                        <span class="font-bold text-white text-[11px] block">Internet</span>
+                        <span class="text-[9px] text-emerald-200">Banda ancha</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-file-contract text-amber-400 text-base mb-1 block"></i>
+                        <span class="font-bold text-white text-[11px] block">Escrituras</span>
+                        <span class="text-[9px] text-emerald-200">Matrícula individual</span>
                     </div>
                 </div>
             </div>
@@ -259,18 +256,18 @@
     <div id="modal-coverage" class="modal-overlay">
         <div class="modal-content overflow-hidden">
             <div class="p-4 bg-emerald-900 text-white font-bold text-xs uppercase flex justify-between items-center border-b border-emerald-700">
-                <span class="tracking-wider text-amber-400"><i class="fas fa-map-location-dot mr-1.5"></i> Zonas de Cobertura</span>
+                <span class="tracking-wider text-amber-400"><i class="fas fa-map-location-dot mr-1.5"></i> Ubicación GPS</span>
                 <button class="close-modal text-lg font-light hover:text-amber-400">&times;</button>
             </div>
             <div class="p-4 text-emerald-100 text-xs">
                 <div class="bg-emerald-800/60 p-4 rounded-xl border border-emerald-600/40 text-center space-y-3">
                     <i class="fas fa-map-pin text-3xl text-amber-400 block"></i>
                     <div>
-                        <p class="font-black text-white text-[13px]">Sabanagrande & Palmar de Varela</p>
+                        <p class="font-black text-white text-[13px]">Sabanagrande, Palmar de Varela y Villa Nora</p>
                         <p class="text-[10px] text-emerald-200 mt-1">Atlántico, Colombia</p>
                     </div>
-                    <a href="https://wa.me/573334002040?text=Hola%20Gael,%20quiero%20agendar%20una%20visita%20guiada%20a%20los%20terrenos." target="_blank" class="bg-amber-500 text-emerald-950 font-black py-2.5 px-4 rounded-xl inline-flex items-center gap-2 text-[10px] uppercase tracking-wider shadow-md w-full justify-center">
-                        <i class="fas fa-calendar-check"></i> Agendar Visita Guiada
+                    <a href="https://maps.app.goo.gl/kPFLYpm5aifYMX7a6" target="_blank" class="bg-amber-500 text-emerald-950 font-black py-2.5 px-4 rounded-xl inline-flex items-center gap-2 text-[10px] uppercase tracking-wider shadow-md w-full justify-center">
+                        <i class="fas fa-directions"></i> Abrir Punto GPS en Google Maps
                     </a>
                 </div>
             </div>
@@ -280,17 +277,17 @@
     <div id="modal-testimonials" class="modal-overlay">
         <div class="modal-content overflow-hidden">
             <div class="p-4 bg-emerald-900 text-white font-bold text-xs uppercase flex justify-between items-center border-b border-emerald-700">
-                <span class="tracking-wider text-amber-400"><i class="fas fa-award mr-1.5"></i> Por qué Gael Pineda</span>
+                <span class="tracking-wider text-amber-400"><i class="fas fa-hand-holding-dollar mr-1.5"></i> Financiación Directa</span>
                 <button class="close-modal text-lg font-light hover:text-amber-400">&times;</button>
             </div>
             <div class="p-4 max-h-[55vh] overflow-y-auto space-y-2.5 text-emerald-100 text-xs">
                 <div class="bg-emerald-800/60 p-3 rounded-xl border border-emerald-600/40">
-                    <h5 class="font-bold text-amber-400 mb-1">Asesoría 100% Personalizada</h5>
-                    <p class="text-[10px] text-emerald-200">Trato directo con Gael Pineda para elegir el lote ajustado a tus planes de inversión.</p>
+                    <h5 class="font-bold text-amber-400 mb-1"><i class="fas fa-percent mr-1"></i> 0% Intereses</h5>
+                    <p class="text-[10px] text-emerald-200">Financiación directa sin intermediarios bancarios ni cobro de intereses.</p>
                 </div>
                 <div class="bg-emerald-800/60 p-3 rounded-xl border border-emerald-600/40">
-                    <h5 class="font-bold text-amber-400 mb-1">Facilidades de Pago</h5>
-                    <p class="text-[10px] text-emerald-200">Planes flexibilizados para la adquisición paulatina de tu terreno campestre.</p>
+                    <h5 class="font-bold text-amber-400 mb-1"><i class="fas fa-calendar-alt mr-1"></i> Hasta 48 Meses</h5>
+                    <p class="text-[10px] text-emerald-200">Cuotas iniciales desde $20.000.000 COP y plazos cómodos para pagar tu terreno.</p>
                 </div>
             </div>
         </div>
@@ -299,12 +296,12 @@
     <div id="modal-qr" class="modal-overlay">
         <div class="modal-content overflow-hidden">
             <div class="p-4 bg-emerald-900 text-white font-bold text-xs uppercase flex justify-between items-center border-b border-emerald-700">
-                <span class="tracking-wider text-amber-400"><i class="fas fa-qrcode mr-1.5"></i> Código QR Oficial</span>
+                <span class="tracking-wider text-amber-400"><i class="fas fa-qrcode mr-1.5"></i> QR Oficial</span>
                 <button class="close-modal text-lg font-light hover:text-amber-400">&times;</button>
             </div>
             <div class="p-6 text-center bg-emerald-950">
                 <div id="qrcode" class="p-3 bg-white rounded-2xl inline-block shadow-2xl border-2 border-amber-500"></div>
-                <p class="text-[10px] text-emerald-200 mt-3 tracking-wide px-4">Escanea para compartir el perfil profesional de Gael Pineda Multiservicios.</p>
+                <p class="text-[10px] text-emerald-200 mt-3 tracking-wide px-4">Escanea para acceder a Multiservicios Gael Pineda.</p>
             </div>
         </div>
     </div>
@@ -313,16 +310,16 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // Desactivación de Splash
+            // Desactivar Splash Screen
             setTimeout(() => { 
                 const s = document.getElementById('splash'); 
                 if(s) { 
                     s.style.opacity = '0'; 
                     setTimeout(() => s.style.display = 'none', 400); 
                 } 
-            }, 1200);
+            }, 1000);
 
-            // Gestión de Modales
+            // Controlador de Modales
             const setupModal = (targetId, modalId) => {
                 const trigger = document.getElementById(targetId); 
                 const modal = document.getElementById(modalId); 
@@ -338,13 +335,12 @@
             };
 
             setupModal('nav-services', 'modal-services'); 
-            setupModal('btn-open-projects', 'modal-services');
             setupModal('nav-gallery', 'modal-gallery'); 
             setupModal('nav-coverage', 'modal-coverage'); 
             setupModal('nav-testimonials', 'modal-testimonials'); 
             setupModal('nav-share', 'modal-qr');
 
-            // Código QR adaptado a GitHub Pages
+            // Código QR para GitHub Pages
             const urlReal = window.location.href;
             const qrBox = document.getElementById("qrcode"); 
             if(qrBox) { 
@@ -358,7 +354,7 @@
                 }); 
             }
 
-            // vCard de Gael Pineda
+            // Descarga de vCard
             const btnVcard = document.getElementById('btn-vcard');
             const toast = document.getElementById('toast');
 
@@ -371,8 +367,9 @@
                         "ORG:Multiservicios Gael Pineda",
                         "TITLE:Asesor Profesional en Lotes Campestres",
                         "TEL;TYPE=CELL;TYPE=PREF:+573334002040",
+                        "URL:https://www.multiserviciosgaelpineda.com/",
                         "ADR;TYPE=WORK:;;Sabanagrande / Palmar de Varela;Atlántico;;Colombia",
-                        "NOTE:Proyectos: Victoria de Sión, El Trébol, Las Margaritas, Colinas de Portofino.",
+                        "NOTE:Lotes campestres con financiación directa hasta 48 meses sin intereses.",
                         "END:VCARD"
                     ].join("\r\n");
 
