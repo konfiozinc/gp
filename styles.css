@@ -301,3 +301,32 @@
             z-index: 60;
         }
 html,body{overflow-x:hidden}img,svg,video{max-width:100%;height:auto}table{max-width:100%}
+
+/* ============ Mejoras producción ============ */
+.avatar-circle img{width:100%;height:100%;object-fit:cover;display:block}
+
+.btn-llamar{
+  background:rgba(6,78,59,.9); color:#fff; border:1px solid rgba(16,185,129,.5);
+  font-weight:900; text-transform:uppercase; font-size:11px; letter-spacing:.5px;
+  padding:12px; border-radius:14px; display:flex; align-items:center; justify-content:center; gap:8px; text-decoration:none;
+}
+.btn-llamar:active{transform:scale(.98)}
+
+.sobre{
+  background:rgba(6,78,59,.5); border:1px solid rgba(234,179,8,.25); border-radius:12px;
+  padding:12px 14px;
+}
+.sobre strong{color:#fde047; font-size:11px; text-transform:uppercase; letter-spacing:.4px; display:block; margin-bottom:5px;}
+.sobre p{font-size:9.5px; line-height:1.55; color:#a7f3d0;}
+
+.btn-secondary-sm{
+  width:100%; background:rgba(6,78,59,.9); color:#fff; border:1px solid rgba(16,185,129,.5);
+  padding:10px; border-radius:12px; font-weight:800; font-size:11px; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:6px;
+}
+.btn-secondary-sm:active{transform:scale(.98)}
+
+.brand-footer a{color:#fde047; text-decoration:none;}
+.brand-footer a:hover{text-decoration:underline;}
+
+.modal-overlay[aria-hidden="true"]{display:none}
+:focus-visible{outline:2px solid #fde047; outline-offset:2px; border-radius:4px;}
